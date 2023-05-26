@@ -14,6 +14,7 @@
                     <li> <router-link class="nav-link active" :to="{ name: 'Product' }">Product</router-link>
                     </li>
                     <li> <router-link class="nav-link active" :to="{ name: 'Image' }">Image</router-link></li>
+                    <li> <router-link class="nav-link active" :to="{ name: 'Employee' }">Employee</router-link></li>
                 </ul>
             </div>
         </div>

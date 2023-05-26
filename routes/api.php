@@ -19,6 +19,11 @@ Route::post('/product_save',[App\Http\Controllers\ProductController::class, 'sto
 Route::put('/product_update/{id}',[App\Http\Controllers\ProductController::class, 'update']);
 Route::delete('/product_delete/{id}',[App\Http\Controllers\ProductController::class, 'destroy']);
 
+Route::get('/employee',[App\Http\Controllers\EmployeeController::class, 'index']);
+Route::post('/employee_save',[App\Http\Controllers\EmployeeController::class, 'store']);
+Route::put('/employee_update/{id}',[App\Http\Controllers\EmployeeController::class, 'update']);
+Route::delete('/employee_delete/{id}',[App\Http\Controllers\EmployeeController::class, 'destroy']);
+
 
 
 Route::get('/images',[App\Http\Controllers\ImageController::class, 'index']);

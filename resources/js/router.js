@@ -2,6 +2,7 @@ import {createWebHistory, createRouter} from 'vue-router';
 import file_upload from './pages/FileUploadComponent.vue';
 import image from './pages/Image.vue';
 import product from './pages/ProductComponent.vue';
+import employee from './pages/EmployeeComponent.vue';
 
 
 const routes = [
@@ -19,6 +20,11 @@ const routes = [
         path: '/product',
         name: 'Product',
         component: product,
+    },
+    {   
+        path: '/employee',
+        name: 'Employee',
+        component: employee,
     },
     
 ];
