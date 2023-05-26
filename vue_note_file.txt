@@ -1,0 +1,39 @@
+link: https://www.youtube.com/watch?v=8_ptB59jcWM
+
+composer create-project laravel/laravel:^9.3 vue_vite
+or
+
+composer create-project laravel/laravel vue_vite
+npm install vue@next vue-loader@next
+npm install
+
+home page = welcome.blade->
+<div id="app">
+</div>
+@vite('resources/js/app.js')
+
+routes page = web->
+Route::get('/{any}', function () {
+    return view('welcome');
+})->where('any', '.*');
+
+js->app.js
+...
+
+npm i @vitejs/plugin-vue@3.0.0  (note: vite version)
+file: vite.config->
+import vue from '@vitejs/plugin-vue'
+vue(),
+
+php artisan serve
+npm run dev
+
+Routing:
+npm install vue-router@next
+js>router.js
+....
+
+js->layoutes->App.vue
+js>pages(....)
+
+
